@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.Nav{
+    height: 70px;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.Navlogo{
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.Navlogo .logo{
+    width: 90px;
+    height: 70px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}  
+.Navitems ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.button{
+    font-weight: 400;
+    transition: 0.5s;
+}
+.button:hover{
+    font-weight: bolder;
+    color: #004fc4;
+    cursor: pointer;
+}
+.Navitems ul li{
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 20px;
+    color: #3e4d50;
+}
+.container{
+    margin-top: 50px;
+    position: relative;
+}
+.Banner{
+    width: 100%;
+    height: 80vh;
+    object-fit: fill;
+    display: flex;
+    justify-content: space-evenly;
+}
+.Banner-header{
+    bottom: 20%;
+    margin:10px 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    color: #004fc4;
+    text-shadow: 0.5px 0.5px;
+}
+.Banner-header .Banner-body{
+    font-size:20px;
+    color: #3e4d50;
+    top: 20%;
+    padding: 30px 0px;
+}
+.Banner-picture{
+    height: 70vh;
+    width: 60vh;
+    background-color: black;
+    box-shadow: 10px 10px 1px #69b7b7;
+}
+.About{
+    height: 75vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("aboutbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.About-header,.Course-header,.Feedback-header,.Contact-header{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    padding: 20px 0px;
+}
+.About-header{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.About-body{
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+.Courses{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+}
+.chemistry{
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("chemistry.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.physics{
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("physics.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.math{
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("math.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.computer{
+    background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("computer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+.box{
+    background-color: white;
+    height: 70vh;
+    width: 30vw;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+    margin: 0px 20px;
+    border-radius: 10px;
+}
+.box-header{
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+}
+
+.box-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-body ul{
+    line-height: 200%;
+    font-size: 25px;
+    list-style-type: none;    
+}
+.Course-header{
+    font-weight: 600;
+}
+.Course-header-text{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.f-red{
+    color: red;
+    margin: 0px 10px ;
+}
+.Feedback{
+    height: 110vh;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Feedback-header{
+    color: #3e4d52;
+    text-shadow: 2px 2px 4px white;
+}
+.Feedback-texts-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.Feedback-photo{
+    background-color: black;
+    border-radius: 60px;
+    height: 60px;
+    width: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.Feedback-box{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40vh;
+    width: 40%;
+    align-items: center;
+    line-height: 300%;
+    border: 3px solid;
+    margin:10px 0px;
+    border-radius: 10px;
+}
+.Feedback-box .Feedback-text{
+    font-size: 25px;
+    margin: 10px 10px;
+}
+.Feedback-student{
+    margin: 5px 10px;
+}
+.Contact{
+    height: 50vh;
+    margin-top: 40px;
+    align-items: center;
+    background-image: url("contactback.jpg");
+    background-size: contain;
+    background-position: 10%;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.Contact-header{
+    margin:5px 10px;
+}
+.Contact-header h1{
+    display: flex;
+    justify-content: center;
+}
+.Contact-body{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 60px;
+}
+.Address, .Phone-number{
+    font-size: 20px;
+    align-items: center;
+    margin: 0px 50px;
+}
+.Address-header, .Phone-header{
+    font-size: 25px;
+    font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+    .Nav{
+        height:90px;
+        justify-content: center;        
+    }
+    .Navlogo{
+        padding: 0 2px;
+    }
+    .Navlogo .logo{
+        width: 90px;
+        height: 80px;
+    }
+    .Navitems ul{
+        justify-content: space-evenly;
+    }
+    .Navitems ul li{
+        font-size: 11px;
+        padding: 2px 4px;
+
+    }
+    .Banner{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .Banner-header{
+        bottom: 0%;
+        margin:10px 10px;
+        display: flex;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .Banner-header .Banner-body{
+        font-size:20px;
+        color: #3e4d50;
+        top: 0%;
+        padding: 20px 0px;
+    }
+    .Banner-picture{
+        height: 50vh;
+        width: 40vh;
+        background-color: black;
+        box-shadow: 10px 10px 1px #69b7b7;
+        left: 10%;
+    }
+    .About{
+        height: 100vh;
+        justify-content: space-evenly;  
+    }
+    .About-header,.Course-header,.Feedback-header{
+        margin: 10px 10px;
+        padding: 10px 0px;
+        font-size: smaller;
+    }
+    .About-body{
+        font-size: 18px;
+        padding: 15px;
+    }
+    .row{
+        display: block;
+        padding:0px 25px;
+    }
+    .box{
+        height: 50vh;
+        width: 80vw;
+        margin-bottom:10px;          
+    }
+    .box-body ul{
+        line-height: 200%;
+        font-size: 20px;
+        list-style-type: none;    
+    }
+    .Feedback-header{
+        padding-left: 10px;
+    }
+    .Feedback-photo{
+    height: 40px;
+    width: 40px;
+    }
+    .Feedback-texts-row{
+        display: block;
+        justify-content: space-around;
+        padding: 0px 10px;
+    }
+    .Feedback-box{
+        height: 20vh;
+        width: 90vw;
+        align-items: center;
+        line-height: 200%;
+        margin: 10px 20px 0 0;
+    }
+    .Feedback-box .Feedback-text{
+        font-size: 15px;
+    }   
+    .Feedback-student{
+        font-size: 15px;
+        margin:0px 5px;
+    }
+    .Contact-header{
+        margin:5px 10px;
+    }
+    .Contact-header h1{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .Contact-body{
+        display: block;
+        justify-content: flex-end;
+        margin-left: 40%;
+    }
+    .Address, .Phone-number{
+        margin: 10px 50px;
+        font-size: 15px;
+    }
+    .Address-header, .Phone-header{
+        font-size: 20px;
+        font-weight: bold;
+    }    
+}
